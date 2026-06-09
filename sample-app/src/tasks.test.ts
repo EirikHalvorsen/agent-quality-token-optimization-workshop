@@ -23,7 +23,7 @@ describe('filterByMinPriority', () => {
 
   // This test FAILS on purpose — it documents the planted off-by-one bug.
   // "minimum priority" should be INCLUSIVE, so priority === min must be returned.
-  it('includes tasks exactly equal to the threshold (currently failing)', () => {
+  it('includes tasks exactly equal to the threshold', () => {
     const result = filterByMinPriority(2);
     const hasExactMatch = result.some((t) => t.priority === 2);
     expect(hasExactMatch).toBe(true);

@@ -1,8 +1,8 @@
 # VS Code Track — Agent Quality & Token Optimization
 
-This track teaches the workshop using **GitHub Copilot in Visual Studio Code** (Chat and Agent modes). Work through the modules in order, each builds on the last and uses the [`sample-app`](../../sample-app/).
+This track teaches the workshop using **GitHub Copilot in Visual Studio Code** (Chat and Agent modes). Work through the modules in order, each builds on the last and uses the [`sample-app`](../../sample-app/README.md).
 
-> New to the ideas? Do the [tool-agnostic concepts](../../concepts/) first.
+> New to the ideas? Do the [tool-agnostic concepts](../../concepts/README.md) first.
 
 ---
 
