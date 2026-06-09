@@ -53,6 +53,23 @@ Record the scorecard for Part C.
 
 ---
 
+## One-shot variant (bonus)
+
+Try the same fix using **Ask** mode as a quick single-turn call and compare the effort:
+
+1. New Chat session, **Ask** mode, model **Auto**.
+2. Drag [`sample-app/src/tasks.ts`](../../sample-app/src/tasks.ts) into the chat and send:
+
+   ```text
+   In filterByMinPriority, change > to >= so the threshold is inclusive. Show only the corrected function.
+   ```
+
+3. Apply the suggested edit with the inline diff tool, then run `npm test` in the terminal.
+
+A well-specified one-shot can solve a clear task in a single, cheap call — no agent loop needed.
+
+---
+
 ## Compounding-error tie-in
 
 Part A failed partly because the agent had to *guess* several things in a row (which file, which bug, how to verify). Each guess is a step with `p < 1`, and `p^n` collapses fast. Part B removed the guesses, pushing each step's `p` toward 1.0.
